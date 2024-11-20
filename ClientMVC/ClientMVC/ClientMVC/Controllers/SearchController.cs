@@ -8,15 +8,16 @@ namespace ClientMVC.Controllers;
 
 public class SearchController : Controller
 {
-    private readonly SearchService _searchService;
     private static SearchViewModel searchModel = new SearchViewModel
     {
         SearchQuery = "",
         IsGoogleSelected = false,
         IsBingSelected = false,
         IsCardView = true,
-        Results = new List<SearchResult>() 
+        Results = new List<SearchResult>()
     };
+
+    private readonly SearchService _searchService;
 
     public SearchController(SearchService searchService)
     {
@@ -26,27 +27,6 @@ public class SearchController : Controller
     public ActionResult Index()
     {
         return View(searchModel);
-    }
-
-    [HttpPost]
-    public ActionResult ChangeView(SearchViewModel model, string name)
-    {
-        if (string.IsNullOrEmpty(model.SearchQuery)
-             || (!model.IsGoogleSelected && !model.IsBingSelected))
-        {
-            ModelState.AddModelError("", "Please enter your search query.");
-            return View(model);
-        }
-        searchModel = new SearchViewModel
-        {
-            SearchQuery = model.SearchQuery,
-            IsGoogleSelected = model.IsGoogleSelected,
-            IsBingSelected = model.IsBingSelected,
-            IsCardView = name == "Card",
-            Results = searchModel.Results
-        };
-
-        return View("Index", searchModel);
     }
 
     [HttpPost]
@@ -67,13 +47,14 @@ public class SearchController : Controller
         }
 
         ViewData["error"] = "";
+
         var results = new List<SearchResult>();
-        var googleList = model.IsGoogleSelected ? 
-            await _searchService.GetSearchResultsAsync(model.SearchQuery, "google") :
+
+        var googleList = model.IsGoogleSelected ? await _searchService.GetSearchResultsAsync(model.SearchQuery, "google") :
             new List<SearchResult>();
-        var bingList = model.IsBingSelected ?
-            await _searchService.GetSearchResultsAsync(model.SearchQuery, "bing") :
+        var bingList = model.IsBingSelected ? await _searchService.GetSearchResultsAsync(model.SearchQuery, "bing") :
             new List<SearchResult>();
+
         results.AddRange(googleList);
         results.AddRange(bingList);
 
@@ -86,5 +67,20 @@ public class SearchController : Controller
             IsCardView = true,
         };
         return View(searchModel);
+    }
+
+    [HttpPost]
+    public ActionResult ChangeView(SearchViewModel model, string name)
+    {
+        searchModel = new SearchViewModel
+        {
+            SearchQuery = model.SearchQuery,
+            IsGoogleSelected = model.IsGoogleSelected,
+            IsBingSelected = model.IsBingSelected,
+            IsCardView = name == "Card",
+            Results = searchModel.Results
+        };
+
+        return View("Index", searchModel);
     }
 }

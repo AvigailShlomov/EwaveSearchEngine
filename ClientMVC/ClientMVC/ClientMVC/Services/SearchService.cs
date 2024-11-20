@@ -17,19 +17,16 @@ public class SearchService
 
     public async Task<List<SearchResult>> GetSearchResultsAsync(string searchQuery, string engineName)
     {
-        string requestUri = "https://localhost:7297/api/SearchEngine"; //TODO: place as constant
-
-
+        string requestUri = "https://localhost:7297/api/SearchEngine";
         var body = new BodyForServer
         {
             SearchQuery = searchQuery,
             EngineName = engineName,
-            Results = new List<SearchResult>() // empty list
+            Results = new List<SearchResult>()
         };
 
         var jsonContent = JsonSerializer.Serialize(body);
         var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
         var response = await _client.PostAsync(requestUri, httpContent);
 
         if (response.IsSuccessStatusCode)
