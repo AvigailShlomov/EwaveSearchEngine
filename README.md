@@ -30,7 +30,9 @@ Server: .NET 8 + MSSQL-LocalDB
 
 ### Installing
 
-Go to Tools > NuGet Package Manager > Package Manager Console to open the console
+open the SearchEngineServerApi progect
+Go to **Tools > NuGet Package Manager > Package Manager Console** to open the console
+and run:
 ```bash
 Update-Database
 ```
