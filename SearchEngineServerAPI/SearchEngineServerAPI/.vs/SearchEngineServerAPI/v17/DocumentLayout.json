@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\api\\searchenginesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\ewavesearchengine\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\api\\searchenginesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|solutionrelative:searchengineserverapi\\api\\searchenginesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\controllers\\searchenginecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\ewavesearchengine\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\dataaccess\\searchdatada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|solutionrelative:searchengineserverapi\\dataaccess\\searchdatada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\ewavesearchengine\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\controllers\\searchenginecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|solutionrelative:searchengineserverapi\\controllers\\searchenginecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\ewavesearchengine\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\models\\searchdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|solutionrelative:searchengineserverapi\\models\\searchdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\ewavesearchengine\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\data\\searchengineserverapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|solutionrelative:searchengineserverapi\\data\\searchengineserverapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\ewavesearchengine\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|solutionrelative:searchengineserverapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +34,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SearchDataDA.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\DataAccess\\SearchDataDA.cs",
+              "RelativeDocumentMoniker": "SearchEngineServerAPI\\DataAccess\\SearchDataDA.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\DataAccess\\SearchDataDA.cs",
+              "RelativeToolTip": "SearchEngineServerAPI\\DataAccess\\SearchDataDA.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:38:37.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SearchData.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Models\\SearchData.cs",
+              "RelativeDocumentMoniker": "SearchEngineServerAPI\\Models\\SearchData.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Models\\SearchData.cs",
+              "RelativeToolTip": "SearchEngineServerAPI\\Models\\SearchData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:37:41.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SearchEngineServerAPIContext.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Data\\SearchEngineServerAPIContext.cs",
+              "RelativeDocumentMoniker": "SearchEngineServerAPI\\Data\\SearchEngineServerAPIContext.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Data\\SearchEngineServerAPIContext.cs",
+              "RelativeToolTip": "SearchEngineServerAPI\\Data\\SearchEngineServerAPIContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:34:11.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SearchEngineServerAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Program.cs",
+              "RelativeToolTip": "SearchEngineServerAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T21:28:51.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SearchEngineController.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
               "RelativeDocumentMoniker": "SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
-              "ToolTip": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
               "RelativeToolTip": "SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T13:09:39.865Z",
               "EditorCaption": ""
@@ -37,11 +105,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SearchEnginesApi.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
               "RelativeDocumentMoniker": "SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
-              "ToolTip": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\EwaveSearchEngine\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
               "RelativeToolTip": "SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADEAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T11:43:12.529Z",
               "EditorCaption": ""

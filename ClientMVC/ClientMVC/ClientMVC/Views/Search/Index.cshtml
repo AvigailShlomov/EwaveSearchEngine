@@ -3,7 +3,7 @@
     ViewData["Title"] = "Index";
 }
 
-<div class ="text-center" style="display: flex; justify-content: center; padding-top: 20px;">
+<div class ="text-center" style="display: flex; flex-direction:column; align-items: center; justify-content: center; padding-top: 20px;">
     <form method="post" action="/Search/Index" style="width: 50%; background: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
     <div class="form-group">
         <h5 for="SearchQuery">EWave Search Engine </h5>
@@ -25,9 +25,14 @@
         <button type="submit" class="btn btn-primary" style="margin-left: auto;">Search</button>
     </div>
 </form>
+    @if (ViewBag.error != "")
+    {
+        <p style="color:red;">@ViewBag.error</p>
+
+    }
 </div>
 
-<form asp-controller="Search" asp-action="ChangeView" method="post" class="text-center" style="margin-top:20px; margin-bottom:20px;">
+<form asp-controller="Search" asp-action="ChangeView"  method="post" class="text-center" style="margin-top:20px; margin-bottom:20px;">
     <input type="hidden" asp-for="SearchQuery" />
     <input type="hidden" asp-for="IsGoogleSelected" />
     <input type="hidden" asp-for="IsBingSelected" />

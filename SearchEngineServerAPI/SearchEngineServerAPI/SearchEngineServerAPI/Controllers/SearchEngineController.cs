@@ -3,7 +3,6 @@ using SearchEngineServerAPI.API;
 using SearchEngineServerAPI.Data;
 using SearchEngineServerAPI.DataAccess;
 using SearchEngineServerAPI.Models;
-using System.Collections.Generic;
 
 namespace SearchEngineServerAPI.Controllers
 {
@@ -38,13 +37,10 @@ namespace SearchEngineServerAPI.Controllers
             if (string.IsNullOrWhiteSpace(request.SearchQuery))
             {
                 _logger.LogError("MISSING SEARCH QUERY in post method - Required ! ");
-                return BadRequest("Search Query Is Required !");
             }
             if (!(request.EngineName == "google" || request.EngineName == "bing"))
             {
-                _logger.LogError("Incorrect engine name entered");
-                return BadRequest("Engine Name invalid !");
-
+                _logger.LogError("Missing engine type from client ");
             }
 
             var searchResultList = await _searchEnginesApi

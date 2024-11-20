@@ -185,3 +185,18 @@ OUTPUT INSERTED.[Id], i._Position;
 2024-11-20 20:25:26.144 +02:00 [INF] Executed action SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI) in 366.5888ms
 2024-11-20 20:25:26.146 +02:00 [INF] Executed endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
 2024-11-20 20:25:26.148 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7297/api/SearchEngine - 200 null application/json; charset=utf-8 376.8836ms
+2024-11-20 22:26:59.373 +02:00 [INF] Now listening on: https://localhost:7297
+2024-11-20 22:26:59.421 +02:00 [INF] Now listening on: http://localhost:5199
+2024-11-20 22:26:59.425 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-20 22:26:59.427 +02:00 [INF] Hosting environment: Development
+2024-11-20 22:26:59.429 +02:00 [INF] Content root path: C:\Users\jonat\source\repos\EwaveSearchEngine\SearchEngineServerAPI\SearchEngineServerAPI\SearchEngineServerAPI
+2024-11-20 22:27:00.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/index.html - null null
+2024-11-20 22:27:00.961 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/index.html - 200 null text/html;charset=utf-8 280.6085ms
+2024-11-20 22:27:00.989 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/index.js - null null
+2024-11-20 22:27:00.997 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/index.js - 200 null application/javascript;charset=utf-8 8.1031ms
+2024-11-20 22:27:01.015 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-20 22:27:01.031 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 16.9218ms
+2024-11-20 22:27:01.078 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/_vs/browserLink - null null
+2024-11-20 22:27:01.154 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.0019ms
+2024-11-20 22:27:01.246 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/v1/swagger.json - null null
+2024-11-20 22:27:01.385 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.918ms

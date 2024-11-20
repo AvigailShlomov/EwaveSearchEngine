@@ -15,7 +15,7 @@ public class SearchController : Controller
         IsGoogleSelected = false,
         IsBingSelected = false,
         IsCardView = true,
-        Results = new List<SearchResult>()
+        Results = new List<SearchResult>() 
     };
 
     public SearchController(SearchService searchService)
@@ -23,7 +23,6 @@ public class SearchController : Controller
         _searchService = searchService;
     }
 
-    // GET: SearchController
     public ActionResult Index()
     {
         return View(searchModel);
@@ -32,6 +31,12 @@ public class SearchController : Controller
     [HttpPost]
     public ActionResult ChangeView(SearchViewModel model, string name)
     {
+        if (string.IsNullOrEmpty(model.SearchQuery)
+             || (!model.IsGoogleSelected && !model.IsBingSelected))
+        {
+            ModelState.AddModelError("", "Please enter your search query.");
+            return View(model);
+        }
         searchModel = new SearchViewModel
         {
             SearchQuery = model.SearchQuery,
@@ -44,17 +49,24 @@ public class SearchController : Controller
         return View("Index", searchModel);
     }
 
-    // POST: Search
     [HttpPost]
     public async Task<ActionResult> Index(SearchViewModel model)
     {
-        if (string.IsNullOrEmpty(model.SearchQuery)
-            || (!model.IsGoogleSelected && !model.IsBingSelected))
+        if (string.IsNullOrEmpty(model.SearchQuery))
         {
-            ModelState.AddModelError("", "Please enter your search query.");
+            ViewData["error"] = "Please enter your search query.";
+            model.Results = new List<SearchResult>();
             return View(model);
         }
 
+        if (!model.IsGoogleSelected && !model.IsBingSelected)
+        {
+            ViewData["error"] =  "Please choose serach engine.";
+            model.Results = new List<SearchResult>();
+            return View(model);
+        }
+
+        ViewData["error"] = "";
         var results = new List<SearchResult>();
         var googleList = model.IsGoogleSelected ? 
             await _searchService.GetSearchResultsAsync(model.SearchQuery, "google") :

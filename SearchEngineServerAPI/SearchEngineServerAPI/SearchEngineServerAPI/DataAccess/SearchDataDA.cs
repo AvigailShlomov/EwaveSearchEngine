@@ -17,6 +17,11 @@ namespace SearchEngineServerAPI.DataAccess
             _logger = logger;   
         }
 
+        public IEnumerable<SearchData> Get()
+        {
+            return _context.SearchData.ToList();
+        }
+
         public void Insert(SearchData data)
         {
             try
@@ -26,7 +31,6 @@ namespace SearchEngineServerAPI.DataAccess
             catch (Exception)
             {
                 _logger.LogError("Error in Insert to DataBase - SearchDataDA File ");
-                Console.WriteLine("Error while inserting to DB");
             }
         }
 
@@ -41,11 +45,10 @@ namespace SearchEngineServerAPI.DataAccess
             catch (Exception)
             {
                 _logger.LogError("Error in InsertMany to DataBase - SearchDataDA File ");
-                Console.WriteLine("Error while inserting multipal elements to DB");
             }
         }
 
-        public IEnumerable<SearchData> CreateNewSearchDataList(List<SearchResult> searchResultList)
+        private IEnumerable<SearchData> CreateNewSearchDataList(List<SearchResult> searchResultList)
         {
             return searchResultList.Select(searchResult => new SearchData()
             {
@@ -54,12 +57,6 @@ namespace SearchEngineServerAPI.DataAccess
                 EnteredDate = DateTime.Now
             });
         }
-
-        public IEnumerable<SearchData> Get()
-        {
-            return _context.SearchData.ToList();
-        }
-
     }
 }
 

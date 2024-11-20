@@ -2,9 +2,7 @@
 using SearchEngineServerAPI.Controllers;
 using SearchEngineServerAPI.Models;
 using SerpApi;
-using System;
 using System.Collections;
-using System.Text.Json;
 
 namespace SearchEngineServerAPI.API;
 
@@ -12,6 +10,7 @@ public class SearchEnginesApi
 {
     private readonly HttpClient _client;
     private readonly ILogger<SearchEngineController> _logger;
+
 
 
     public SearchEnginesApi(HttpClient httpClient,ILogger<SearchEngineController> logger)
@@ -36,23 +35,16 @@ public class SearchEnginesApi
             JObject data = search.GetJson();
             var organic_results = data["organic_results"];
 
-            List<SearchResult> searchResultList = new();
-            foreach (var res in organic_results)
+            return organic_results.Select(res => new SearchResult()
             {
-                var searchResult = new SearchResult()
-                {
-                    SearchEngineType = engineName,
-                    Title = res.Value<string>("title"),
-                    Link = res.Value<string>("link"),
-                    Snippet = res.Value<string>("snippet")
-                };
-                searchResultList.Add(searchResult);
-            }
-            return searchResultList;
+                SearchEngineType = engineName,
+                Title = res.Value<string>("title"),
+                Link = res.Value<string>("link"),
+                Snippet = res.Value<string>("snippet")
+            }).ToList();
         }
         catch (SerpApiSearchException ex)
         {
-            Console.WriteLine("Faild to load Search Engine API");
             _logger.LogError("Error while fetching from SerpApi. Serp Exception " + ex);
             return new List<SearchResult>();
         }
