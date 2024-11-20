@@ -1,0 +1,6 @@
+@SearchEngineServerAPI_HostAddress = http://localhost:5199
+
+GET {{SearchEngineServerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

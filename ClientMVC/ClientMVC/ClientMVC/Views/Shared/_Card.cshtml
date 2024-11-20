@@ -1,0 +1,15 @@
+﻿@model ClientMVC.ViewModel.SearchViewModel
+
+
+@foreach (var res in Model.Results)
+{
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="card" style=" margin:10px; width: 50%; background: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card-body text-center">
+                <h5 class="card-title">@Html.DisplayFor(ModelItem => res.SearchEngineType) - @Html.DisplayFor(ModelItem => res.Title) </h5>
+                <p class="card-text"> @Html.DisplayFor(ModelItem => res.Snippet)</p>
+                <a href="@Html.DisplayFor(ModelItem => res.Link)"> Link to the official result </a>
+            </div>
+        </div>
+    </div>
+}

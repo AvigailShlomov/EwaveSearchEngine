@@ -1,0 +1,23 @@
+2024-11-20 00:57:38.781 +02:00 [INF] Now listening on: https://localhost:7297
+2024-11-20 00:57:38.826 +02:00 [INF] Now listening on: http://localhost:5199
+2024-11-20 00:57:38.830 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-20 00:57:38.832 +02:00 [INF] Hosting environment: Development
+2024-11-20 00:57:38.833 +02:00 [INF] Content root path: C:\Users\jonat\source\repos\SearchEngineServerAPI\SearchEngineServerAPI\SearchEngineServerAPI
+2024-11-20 00:57:40.480 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/index.html - null null
+2024-11-20 00:57:40.756 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/index.html - 200 null text/html;charset=utf-8 283.7608ms
+2024-11-20 00:57:40.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/index.js - null null
+2024-11-20 00:57:40.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-20 00:57:40.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/_vs/browserLink - null null
+2024-11-20 00:57:40.787 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/index.js - 200 null application/javascript;charset=utf-8 13.794ms
+2024-11-20 00:57:40.809 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 32.843ms
+2024-11-20 00:57:40.871 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.6329ms
+2024-11-20 00:57:40.919 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/v1/swagger.json - null null
+2024-11-20 00:57:41.094 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 175.7338ms
+2024-11-20 01:01:07.589 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7297/api/SearchEngine - application/json 196
+2024-11-20 01:01:07.608 +02:00 [INF] Executing endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 01:01:07.635 +02:00 [INF] Route matched with {action = "PostDataFromSearchEngine", controller = "SearchEngine"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[SearchEngineServerAPI.Models.SearchResult]]] PostDataFromSearchEngine(SearchEngineServerAPI.Models.SearchRequest) on controller SearchEngineServerAPI.Controllers.SearchEngineController (SearchEngineServerAPI).
+2024-11-20 01:01:07.806 +02:00 [INF] SearchEngineController Post Method start excuting..
+2024-11-20 01:01:07.814 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SearchEngineServerAPI.Models.SearchResult, SearchEngineServerAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-20 01:01:07.822 +02:00 [INF] Executed action SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI) in 181.931ms
+2024-11-20 01:01:07.824 +02:00 [INF] Executed endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 01:01:07.827 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7297/api/SearchEngine - 200 null application/json; charset=utf-8 238.6925ms

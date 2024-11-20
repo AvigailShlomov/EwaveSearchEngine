@@ -1,0 +1,88 @@
+2024-11-20 11:08:24.711 +02:00 [INF] Now listening on: https://localhost:7297
+2024-11-20 11:08:24.756 +02:00 [INF] Now listening on: http://localhost:5199
+2024-11-20 11:08:24.759 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-20 11:08:24.760 +02:00 [INF] Hosting environment: Development
+2024-11-20 11:08:24.761 +02:00 [INF] Content root path: C:\Users\jonat\source\repos\SearchEngineServerAPI\SearchEngineServerAPI\SearchEngineServerAPI
+2024-11-20 11:08:26.227 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/index.html - null null
+2024-11-20 11:08:26.483 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/index.html - 200 null text/html;charset=utf-8 261.0865ms
+2024-11-20 11:08:26.504 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-20 11:08:26.504 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/index.js - null null
+2024-11-20 11:08:26.510 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/_vs/browserLink - null null
+2024-11-20 11:08:26.523 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/index.js - 200 null application/javascript;charset=utf-8 19.3632ms
+2024-11-20 11:08:26.570 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 66.5031ms
+2024-11-20 11:08:26.608 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.0164ms
+2024-11-20 11:08:26.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/v1/swagger.json - null null
+2024-11-20 11:08:26.860 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.6622ms
+2024-11-20 11:13:11.714 +02:00 [INF] Now listening on: https://localhost:7297
+2024-11-20 11:13:11.764 +02:00 [INF] Now listening on: http://localhost:5199
+2024-11-20 11:13:11.769 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-20 11:13:11.771 +02:00 [INF] Hosting environment: Development
+2024-11-20 11:13:11.772 +02:00 [INF] Content root path: C:\Users\jonat\source\repos\SearchEngineServerAPI\SearchEngineServerAPI\SearchEngineServerAPI
+2024-11-20 11:13:12.434 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/index.html - null null
+2024-11-20 11:13:12.725 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/index.html - 200 null text/html;charset=utf-8 302.1634ms
+2024-11-20 11:13:12.746 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/index.js - null null
+2024-11-20 11:13:12.746 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/_vs/browserLink - null null
+2024-11-20 11:13:12.746 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-20 11:13:12.757 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/index.js - 200 null application/javascript;charset=utf-8 12.2724ms
+2024-11-20 11:13:12.792 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 47.1193ms
+2024-11-20 11:13:12.842 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.301ms
+2024-11-20 11:13:12.917 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7297/swagger/v1/swagger.json - null null
+2024-11-20 11:13:13.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7297/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.9804ms
+2024-11-20 11:20:01.608 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7297/api/SearchEngine - application/json; charset=utf-8 58
+2024-11-20 11:20:01.624 +02:00 [INF] Executing endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 11:20:01.653 +02:00 [INF] Route matched with {action = "PostDataFromSearchEngine", controller = "SearchEngine"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[SearchEngineServerAPI.Models.SearchResult]]] PostDataFromSearchEngine(SearchEngineServerAPI.Models.SearchRequest) on controller SearchEngineServerAPI.Controllers.SearchEngineController (SearchEngineServerAPI).
+2024-11-20 11:20:01.803 +02:00 [INF] SearchEngineController Post Method start excuting..
+2024-11-20 11:20:09.996 +02:00 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [SearchData] USING (
+VALUES (@p0, @p1, @p2, 0),
+(@p3, @p4, @p5, 1)) AS i ([EnteredDate], [SearchEngine], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([EnteredDate], [SearchEngine], [Title])
+VALUES (i.[EnteredDate], i.[SearchEngine], i.[Title])
+OUTPUT INSERTED.[Id], i._Position;
+2024-11-20 11:20:10.045 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SearchEngineServerAPI.Models.SearchResult, SearchEngineServerAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-20 11:20:10.058 +02:00 [INF] Executed action SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI) in 8398.2176ms
+2024-11-20 11:20:10.060 +02:00 [INF] Executed endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 11:20:10.071 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7297/api/SearchEngine - 200 null application/json; charset=utf-8 8463.1282ms
+2024-11-20 11:22:45.937 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7297/api/SearchEngine - application/json; charset=utf-8 58
+2024-11-20 11:22:45.940 +02:00 [INF] Executing endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 11:22:45.942 +02:00 [INF] Route matched with {action = "PostDataFromSearchEngine", controller = "SearchEngine"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[SearchEngineServerAPI.Models.SearchResult]]] PostDataFromSearchEngine(SearchEngineServerAPI.Models.SearchRequest) on controller SearchEngineServerAPI.Controllers.SearchEngineController (SearchEngineServerAPI).
+2024-11-20 11:22:45.949 +02:00 [INF] SearchEngineController Post Method start excuting..
+2024-11-20 11:22:46.639 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [SearchData] USING (
+VALUES (@p0, @p1, @p2, 0),
+(@p3, @p4, @p5, 1)) AS i ([EnteredDate], [SearchEngine], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([EnteredDate], [SearchEngine], [Title])
+VALUES (i.[EnteredDate], i.[SearchEngine], i.[Title])
+OUTPUT INSERTED.[Id], i._Position;
+2024-11-20 11:22:46.643 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SearchEngineServerAPI.Models.SearchResult, SearchEngineServerAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-20 11:22:46.646 +02:00 [INF] Executed action SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI) in 700.3012ms
+2024-11-20 11:22:46.648 +02:00 [INF] Executed endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 11:22:46.650 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7297/api/SearchEngine - 200 null application/json; charset=utf-8 713.3417ms
+2024-11-20 11:23:08.308 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7297/api/SearchEngine - application/json; charset=utf-8 58
+2024-11-20 11:23:08.313 +02:00 [INF] Executing endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 11:23:08.314 +02:00 [INF] Route matched with {action = "PostDataFromSearchEngine", controller = "SearchEngine"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[SearchEngineServerAPI.Models.SearchResult]]] PostDataFromSearchEngine(SearchEngineServerAPI.Models.SearchRequest) on controller SearchEngineServerAPI.Controllers.SearchEngineController (SearchEngineServerAPI).
+2024-11-20 11:23:08.319 +02:00 [INF] SearchEngineController Post Method start excuting..
+2024-11-20 11:23:08.525 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [SearchData] USING (
+VALUES (@p0, @p1, @p2, 0),
+(@p3, @p4, @p5, 1)) AS i ([EnteredDate], [SearchEngine], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([EnteredDate], [SearchEngine], [Title])
+VALUES (i.[EnteredDate], i.[SearchEngine], i.[Title])
+OUTPUT INSERTED.[Id], i._Position;
+2024-11-20 11:23:08.529 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SearchEngineServerAPI.Models.SearchResult, SearchEngineServerAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-20 11:23:08.531 +02:00 [INF] Executed action SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI) in 214.652ms
+2024-11-20 11:23:08.533 +02:00 [INF] Executed endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 11:23:08.535 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7297/api/SearchEngine - 200 null application/json; charset=utf-8 226.5677ms
+2024-11-20 11:24:08.916 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7297/api/SearchEngine - application/json; charset=utf-8 65
+2024-11-20 11:24:08.921 +02:00 [INF] Executing endpoint 'SearchEngineServerAPI.Controllers.SearchEngineController.PostDataFromSearchEngine (SearchEngineServerAPI)'
+2024-11-20 11:24:08.923 +02:00 [INF] Route matched with {action = "PostDataFromSearchEngine", controller = "SearchEngine"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[SearchEngineServerAPI.Models.SearchResult]]] PostDataFromSearchEngine(SearchEngineServerAPI.Models.SearchRequest) on controller SearchEngineServerAPI.Controllers.SearchEngineController (SearchEngineServerAPI).
+2024-11-20 11:24:08.928 +02:00 [INF] SearchEngineController Post Method start excuting..

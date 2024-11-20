@@ -1,0 +1,17 @@
+﻿@model ClientMVC.ViewModel.SearchViewModel
+
+@foreach (var res in Model.Results)
+{
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="list-group list-group-item-success" style=" margin:10px; width: 50%;  border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <a href="@Html.DisplayFor(ModelItem => res.Link)" class="list-group-item list-group-item-action flex-column align-items-start active">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">@Html.DisplayFor(ModelItem => res.Title)</h5>
+                    <small>@Html.DisplayFor(ModelItem => res.SearchEngineType)</small>
+                </div>
+                <p class="mb-1">@Html.DisplayFor(ModelItem => res.Snippet)</p>
+            </a>
+        </div>
+    </div>
+
+}

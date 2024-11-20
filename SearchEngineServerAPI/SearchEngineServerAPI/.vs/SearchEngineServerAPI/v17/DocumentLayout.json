@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\api\\searchenginesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|solutionrelative:searchengineserverapi\\api\\searchenginesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|c:\\users\\jonat\\source\\repos\\searchengineserverapi\\searchengineserverapi\\searchengineserverapi\\controllers\\searchenginecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7205AA3F-3BB9-4942-96E7-0190A8262F8A}|SearchEngineServerAPI\\SearchEngineServerAPI.csproj|solutionrelative:searchengineserverapi\\controllers\\searchenginecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SearchEngineController.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
+              "RelativeDocumentMoniker": "SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
+              "RelativeToolTip": "SearchEngineServerAPI\\Controllers\\SearchEngineController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:09:39.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SearchEnginesApi.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
+              "RelativeDocumentMoniker": "SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\SearchEngineServerAPI\\SearchEngineServerAPI\\SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
+              "RelativeToolTip": "SearchEngineServerAPI\\API\\SearchEnginesApi.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:43:12.529Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EKF8h5sie0tH06SJF0j8IQyT/2LwcCiOo0yT/kxI61Y=",
+  "Source": "SearchEngineServerAPI",
+  "BasePath": "_content/SearchEngineServerAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
