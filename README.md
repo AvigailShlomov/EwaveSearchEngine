@@ -20,17 +20,20 @@ Server: .NET 8 + MSSQL-LocalDB
 * Fine looking web page
 
 ## Getting Started
+* Clone this repo.
 
 ### Dependencies
 * Visual Studio
 *  .Net 8
-*  MSSQL- SQL Server Express LocalDB - https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16
+*  MSSQL- SQL Server Express LocalDB
 *  .Net MVC
 
 ### Installing
 
-* Clone this repo.
-
+Go to Tools > NuGet Package Manager > Package Manager Console to open the console
+```bash
+Update-Database
+```
 
 ### Executing program
 
