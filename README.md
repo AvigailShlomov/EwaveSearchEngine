@@ -30,9 +30,9 @@ Server: .NET 8 + MSSQL-LocalDB
 
 ### Installing
 
-* open the SearchEngineServerApi progect
+* Open the SearchEngineServerApi progect
 * Go to **Tools > NuGet Package Manager > Package Manager Console** to open the console
-* and run:
+* Run:
 ```bash
 Update-Database
 ```
@@ -42,6 +42,9 @@ Update-Database
 * Open ClientMVC solution
 * Open SearchEngineServerAPI solution
 
+### View database
+* Go to **View > SQL Server Object Explorer**
+* Go to **SQL Server > (localdb)\MSSQLLocalDB > Databases > SearchEngineServerAPIContext-c559fa05-d67a-47ed-9031-1ce98cdfa92d**
 
 ## Help
 
