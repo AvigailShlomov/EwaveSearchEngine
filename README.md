@@ -21,6 +21,7 @@ Server: .NET 8 + MSSQL-LocalDB
 
 ## Getting Started
 * Clone this repo.
+*  **In case you run out of serpApi req- you can change the ApiKey value to this: 0611070e4aebc5e15f9982694bb6f5d542c4d92142f3e90a919d56341eeca361
 
 ### Dependencies
 * Visual Studio
